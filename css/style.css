@@ -29,6 +29,15 @@
   left: 0;
 }
 
+.navbar-container {
+  width: 100%;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 html,
 body {
   font-family: "Gotham Pro";
@@ -99,21 +108,18 @@ body {
   background-image: url(../img/nav/logo.png);
   width: 110px;
   height: 54px;
-  margin-right: 15px;
 }
 
 .navbar-insta {
   background-image: url(../img/nav/inst.png);
   width: 16px;
   height: 17px;
-  margin-right: 15px;
 }
 
 .navbar-facebook {
   background-image: url(../img/nav/fb.png);
   width: 10px;
   height: 17px;
-  margin-right: 15px;
 }
 
 .navbar-youtube {
@@ -132,7 +138,6 @@ body {
   border-radius: 25px;
   background: #ffffff;
   box-shadow: 0px 0px 25px rgba(82, 191, 255, 0.15);
-  margin-left: 20px;
 }
 .reqest__btn::before {
   content: "";
@@ -144,6 +149,8 @@ body {
 }
 
 .navbar-left {
+  width: 198px;
+  justify-content: space-between;
   padding-left: 0;
   padding-right: 0;
   display: flex;
@@ -158,6 +165,8 @@ body {
 .navbar-right {
   display: flex;
   align-items: center;
+  width: 291px;
+  justify-content: space-between;
 }
 
 #navbarSupportedContent {
@@ -165,8 +174,6 @@ body {
   left: 0;
   width: 100%;
   padding-top: var(--bs-navbar-padding-y);
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
 }
 
 .navbar-collapsed {
@@ -213,13 +220,24 @@ body {
 
 .navbar-wrapper {
   position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
+.language {
+  padding-left: 0;
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+@media (max-width: 1199px) {
+  .navbar-collapse {
+    padding: 0 25px;
+  }
+}
 @media (max-width: 1131px) {
   #navbarSupportedContent {
     justify-content: space-around;
@@ -272,9 +290,6 @@ body {
   .navbar-brand {
     order: 4;
     margin-right: 0;
-  }
-  .language {
-    display: none;
   }
   .reqest__btn {
     margin-left: 0;
