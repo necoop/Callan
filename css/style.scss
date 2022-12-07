@@ -43,6 +43,17 @@ html,
 body {
   font-family: "Gotham Pro";
   overflow-x: hidden;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #7a7a7a;
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  color: #52bfff;
 }
 .navbar-toggler {
   z-index: 100;
@@ -534,4 +545,47 @@ h1 {
       left: calc(-93% + 192px);
     }
   }
+}
+.welcome {
+  margin-top: 97px;
+  position: relative;
+  .tree-left {
+    position: absolute;
+    top: -286px;
+  }
+}
+.welcome-box {
+  margin-top: 105px;
+}
+.welcome-inner {
+  width: 100%;
+  height: 180px;
+  background: #ffffff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 12px;
+}
+.welcome-inner-box {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border: 1px dashed #ecf6fc;
+  border-radius: 20px;
+}
+.welcome-inner-text {
+  padding: 60px 10px 0 10px;
+  position: relative;
+}
+.welcome-img {
+  margin: -128px auto 0;
+  display: block;
+  position: relative;
+}
+@media (max-width: 1199px) {
+  .tree-left {
+    display: none;
+  }
+}
+.universities {
+  margin-top: 150px;
 }
