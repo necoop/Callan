@@ -558,7 +558,8 @@ h1 blue {
 }
 .welcome .tree-left {
   position: absolute;
-  top: -286px;
+  top: -230px;
+  z-index: -10;
 }
 
 .welcome-ibg {
@@ -612,7 +613,7 @@ h1 blue {
   position: relative;
 }
 
-@media (max-width: 1480px) {
+@media (max-width: 1199px) {
   .tree-left {
     display: none;
   }
