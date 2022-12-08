@@ -42,7 +42,6 @@
 html,
 body {
   font-family: "Gotham Pro";
-  overflow-x: hidden;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -123,6 +122,7 @@ h2 {
 
 .navbar-brand {
   background-image: url(../img/nav/logo.png);
+  background-repeat: no-repeat;
   width: 110px;
   height: 54px;
 }
@@ -293,7 +293,7 @@ h2 {
   .navbar-collapsed {
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 90%;
   }
   .navbar-insta {
     order: 1;
@@ -356,6 +356,11 @@ h2 {
     border-radius: 0;
     background-color: rgba(255, 255, 255, 0);
     padding: 0 10px;
+  }
+}
+@media (max-width: 627px) {
+  .navbar-collapsed {
+    width: 70%;
   }
 }
 .main {
@@ -557,17 +562,20 @@ h1 blue {
 }
 
 .welcome-ibg {
+  min-height: 2956px;
+  position: absolute;
   width: 100%;
-  position: relative;
   z-index: -10;
+  overflow-x: hidden;
 }
 
 .welcome-ibg-pic {
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 100%;
-  min-width: 1440px;
+  height: 100%;
+  min-width: 100vw;
+  height: auto;
   z-index: -10;
   overflow-y: hidden;
 }
@@ -665,7 +673,15 @@ h1 blue {
   position: relative;
 }
 
-.swiper-button-next::after {
+.swiper-next {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  z-index: 10;
+}
+.swiper-next::after {
   content: "";
   background: url(../img/ui/arr-right.svg);
   background-repeat: no-repeat;
@@ -676,16 +692,24 @@ h1 blue {
   left: 15px;
   top: -25px;
 }
-.swiper-button-next:hover::after {
+.swiper-next:hover::after {
   background-image: url(../img/ui/arr-right-hover.svg);
   filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.5));
 }
-.swiper-button-next:active::after {
+.swiper-next:active::after {
   background-image: url(../img/ui/arr-right-active.svg);
   filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.5));
 }
 
-.swiper-button-prev::after {
+.swiper-prev {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  z-index: 10;
+}
+.swiper-prev::after {
   content: "";
   background: url(../img/ui/arr-left.svg);
   background-repeat: no-repeat;
@@ -696,25 +720,25 @@ h1 blue {
   left: -40px;
   top: -25px;
 }
-.swiper-button-prev:hover::after {
+.swiper-prev:hover::after {
   background-image: url(../img/ui/arr-left-hover.svg);
   filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.5));
 }
-.swiper-button-prev:active::after {
+.swiper-prev:active::after {
   background-image: url(../img/ui/arr-left-active.svg);
   filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.5));
 }
 
 @media (max-width: 575px) {
-  .swiper-button-next {
+  .swiper-next {
     right: 30px;
   }
-  .swiper-button-prev {
+  .swiper-prev {
     left: 30px;
   }
 }
-@media (max-width: 991px) {
-  .universities-text {
+@media (max-width: 1199px) {
+  .white-box-text {
     margin: 0 10px;
     padding: 10px;
     border-radius: 20px;
@@ -723,4 +747,53 @@ h1 blue {
 }
 .student-reviews {
   margin-top: 150px;
+}
+.student-reviews .row {
+  margin-bottom: 40px;
+}
+
+.swiper-rewiews {
+  overflow-x: hidden;
+  border-radius: 20px;
+}
+
+.slide-reviews-inner {
+  background: linear-gradient(213.88deg, #b1e2ff -67.78%, #68c7ff 175.48%);
+  overflow: hidden;
+  width: 212px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.slide-reviews-inner img {
+  margin-top: 22px;
+  z-index: -5;
+}
+
+.slide-reviews-box {
+  background: #ffffff;
+  border-radius: 20px;
+  margin-top: -110px;
+  padding: 15px 15px 15px;
+}
+.slide-reviews-box .text-center {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #7a7a7a;
+}
+.slide-reviews-box span {
+  text-align: left;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 22px;
+  color: #7a7a7a;
+}
+
+.reviews-box-inner {
+  border-radius: 20px;
+  padding: 106px 15px 15px 15px;
+  height: 100%;
+  border: 1px dashed #ECF6FC;
 }/*# sourceMappingURL=style.css.map */

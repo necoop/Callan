@@ -171,7 +171,7 @@
     <div class="container">
       <div class="row justify-content-center text-center">
         <div class="col-xl-4 col-md-6 col-sm-12 ">
-          <div class="universities-text">
+          <div class="white-box-text">
             <h2>Университеты</h2>
             В нашем каталоге вы найдете более 100 университетов из более чем 14 стран
           </div>
@@ -237,8 +237,8 @@
           <!-- If we need scrollbar -->
           <!-- <div class="swiper-scrollbar"></div> -->
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev swiper-prev"></div>
+        <div class="swiper-button-next swiper-next"></div>
       </div>
     </div>
   </section>
@@ -247,14 +247,88 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2>Отзывы наших студентов</h2>
+          <div class="white-box-text">
+            <h2>Отзывы наших студентов</h2>
+          </div>
         </div>
+      </div>
+
+      <!-- Slider main container -->
+      <div class="swiper-box">
+        <div class="swiper-rewiews mySwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper text-center">
+            <!-- Slides -->
+            <div class="swiper-slide slide-reviews col-xl-4 col-md-6 col-sm-12">
+              <div class="slide-reviews-inner">
+                <img src="./img/reviews/reviews-avatar.png" alt="">
+              </div>
+              <div class="slide-reviews-box">
+                <div class="reviews-box-inner">
+                  <div class="slide-reviews-text">
+                    Александр Иванов
+                  </div>
+                  <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit!
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide-reviews col-xl-4 col-md-6 col-sm-12">
+              <div class="slide-reviews-inner">
+                <img src="./img/reviews/reviews-avatar.png" alt="">
+              </div>
+              <div class="slide-reviews-box">
+                <div class="reviews-box-inner">
+                  <div class="slide-reviews-text">
+                    Александр Иванов
+                  </div>
+                  <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit!
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide-reviews col-xl-4 col-md-6 col-sm-12">
+              <div class="slide-reviews-inner">
+                <img src="./img/reviews/reviews-avatar.png" alt="">
+              </div>
+              <div class="slide-reviews-box">
+                <div class="reviews-box-inner">
+                  <div class="slide-reviews-text">
+                    Александр Иванов
+                  </div>
+                  <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit!
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+
+          <!-- If we need navigation buttons -->
+
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+        <div class="swiper-reviews-prev swiper-prev"></div>
+        <div class="swiper-reviews-next swiper-next"></div>
       </div>
     </div>
   </section>
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/slider-universities.js"></script>
+  <script src="./js/slider-reviews.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,9 @@
-const swiper = new Swiper('.swiper', {
+const swiperRewiews = new Swiper('.swiper-rewiews', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 4,
-    spaceBetween: 30,
+    slidesPerView: 3,
+    spaceBetween: 20,
     slidesPerGroup: 1,
     // If we need pagination
     // pagination: {
@@ -12,8 +12,8 @@ const swiper = new Swiper('.swiper', {
   
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-reviews-next',
+      prevEl: '.swiper-reviews-prev',
     },
   
     // And if we need scrollbar
@@ -28,11 +28,11 @@ const swiper = new Swiper('.swiper', {
       767: {
         slidesPerView: 2,
       },
-      991: {
-        slidesPerView: 3,
-      },
+    //   991: {
+    //     slidesPerView: 3,
+    //   },
       1199: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
     },
   });
