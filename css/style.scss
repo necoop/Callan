@@ -608,7 +608,7 @@ height: auto;
   display: block;
   position: relative;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1480px) {
   .tree-left {
     display: none;
   }
@@ -750,7 +750,8 @@ height: auto;
 }
 .swiper-rewiews {
   overflow-x: hidden;
-  border-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .slide-reviews-inner {
@@ -787,7 +788,6 @@ height: auto;
 }
 .reviews-box-inner {
   border-radius: 20px;
-
   padding: 106px 15px 15px 15px;
   height: 100%;
   border: 1px dashed #ECF6FC;

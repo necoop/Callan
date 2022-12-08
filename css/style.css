@@ -612,7 +612,7 @@ h1 blue {
   position: relative;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1480px) {
   .tree-left {
     display: none;
   }
@@ -754,7 +754,8 @@ h1 blue {
 
 .swiper-rewiews {
   overflow-x: hidden;
-  border-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .slide-reviews-inner {
