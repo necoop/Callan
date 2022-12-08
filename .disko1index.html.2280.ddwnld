@@ -7,10 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Callan Education</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -120,9 +119,6 @@
   </div>
 
   <section class="welcome">
-    <div class="welcome-ibg">
-      <img src="./img/welcome/bg.jpg" alt="" class="welcome-ibg-pic">
-    </div>
     <img src="./img/welcome/tree.png" alt="деревце" class="tree-left">
     <div class="container">
       <div class="row justify-content-center text-center">
@@ -167,89 +163,50 @@
   </section>
 
   <section class="universities">
-
+    <h2>Университеты</h2>
     <div class="container">
       <div class="row justify-content-center text-center">
         <div class="col-xl-4 col-md-6 col-sm-12 ">
-          <div class="universities-text">
-            <h2>Университеты</h2>
-            В нашем каталоге вы найдете более 100 университетов из более чем 14 стран
-          </div>
+          В нашем каталоге вы найдете более 100 университетов из более чем 14 стран
         </div>
       </div>
 
       <!-- Slider main container -->
-      <div class="swiper-box">
-        <div class="swiper mySwiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper text-center">
-            <!-- Slides -->
-
-            <div class="swiper-slide col-xl-3 col-lg-4 col-md-6 col-sm-12 slide-universities-wrapper">
-              <img src="./img/universities/slide1.png" alt="" class="slide-universities-inner">
-              <div class="slider-text-bottom">
-                <div class="slider-country">Россия</div>
-                <div class="slider-numbers">15 вузов</div>
-              </div>
-            </div>
-            <div class="swiper-slide col-xl-3 col-lg-4 col-md-6 col-sm-12 slide-universities-wrapper">
-              <img src="./img/universities/slide1.png" alt="" class="slide-universities-inner">
-              <div class="slider-text-bottom">
-                <div class="slider-country">Россия</div>
-                <div class="slider-numbers">15 вузов</div>
-              </div>
-            </div>
-            <div class="swiper-slide col-xl-3 col-lg-4 col-md-6 col-sm-12 slide-universities-wrapper">
-              <img src="./img/universities/slide1.png" alt="" class="slide-universities-inner">
-              <div class="slider-text-bottom">
-                <div class="slider-country">Россия</div>
-                <div class="slider-numbers">15 вузов</div>
-              </div>
-            </div>
-            <div class="swiper-slide col-xl-3 col-lg-4 col-md-6 col-sm-12 slide-universities-wrapper">
-              <img src="./img/universities/slide1.png" alt="" class="slide-universities-inner">
-              <div class="slider-text-bottom">
-                <div class="slider-country">Россия</div>
-                <div class="slider-numbers">15 вузов</div>
-              </div>
-            </div>
-            <div class="swiper-slide col-xl-3 col-lg-4 col-md-6 col-sm-12 slide-universities-wrapper">
-              <img src="./img/universities/slide1.png" alt="" class="slide-universities-inner">
-              <div class="slider-text-bottom">
-                <div class="slider-country">Россия</div>
-                <div class="slider-numbers">15 вузов</div>
-              </div>
-            </div>
-            <div class="swiper-slide col-xl-3 col-lg-4 col-md-6 col-sm-12 slide-universities-wrapper">
-              <img src="./img/universities/slide1.png" alt="" class="slide-universities-inner">
-              <div class="slider-text-bottom">
-                <div class="slider-country">Россия</div>
-                <div class="slider-numbers">15 вузов</div>
-              </div>
-            </div>
+      <div class="swiper mySwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide col-xl-4 col-md-6 col-sm-12">
+            <img src="./img/universities/slide1.png" alt="">
           </div>
-          <!-- If we need pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
-
-          <!-- If we need navigation buttons -->
-
-
-          <!-- If we need scrollbar -->
-          <!-- <div class="swiper-scrollbar"></div> -->
+          <div class="swiper-slide">
+            <img src="./img/universities/slide1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/universities/slide1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/universities/slide1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/universities/slide1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/universities/slide1.png" alt="">
+          </div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-      </div>
-    </div>
-  </section>
 
-  <section class="student-reviews">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2>Отзывы наших студентов</h2>
-        </div>
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
+
+
     </div>
   </section>
   <script src="./js/bootstrap.bundle.min.js"></script>

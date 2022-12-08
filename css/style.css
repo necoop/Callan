@@ -556,6 +556,22 @@ h1 blue {
   top: -286px;
 }
 
+.welcome-ibg {
+  width: 100%;
+  position: relative;
+  z-index: -10;
+}
+
+.welcome-ibg-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 1440px;
+  z-index: -10;
+  overflow-y: hidden;
+}
+
 .welcome-box {
   margin-top: 105px;
 }
@@ -594,5 +610,117 @@ h1 blue {
   }
 }
 .universities {
+  margin-top: 150px;
+}
+
+.swiper {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.slide-universities-wrapper {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.slide-universities-inner {
+  margin: 12px auto 0;
+  border: 1px solid #ecf6fc;
+  border-radius: 20px;
+  width: 90%;
+}
+
+.slider-text-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+  margin: 10px auto 20px;
+}
+
+.slider-country {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #7a7a7a;
+}
+
+.slider-numbers {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 13px;
+  color: #d9d9d9;
+}
+
+.universities .swiper {
+  border-radius: 20px;
+}
+
+.swiper-box {
+  position: relative;
+}
+
+.swiper-button-next::after {
+  content: "";
+  background: url(../img/ui/arr-right.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  width: 52px;
+  height: 52px;
+  left: 15px;
+  top: -25px;
+}
+.swiper-button-next:hover::after {
+  background-image: url(../img/ui/arr-right-hover.svg);
+  filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.5));
+}
+.swiper-button-next:active::after {
+  background-image: url(../img/ui/arr-right-active.svg);
+  filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.5));
+}
+
+.swiper-button-prev::after {
+  content: "";
+  background: url(../img/ui/arr-left.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  width: 52px;
+  height: 52px;
+  left: -40px;
+  top: -25px;
+}
+.swiper-button-prev:hover::after {
+  background-image: url(../img/ui/arr-left-hover.svg);
+  filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.5));
+}
+.swiper-button-prev:active::after {
+  background-image: url(../img/ui/arr-left-active.svg);
+  filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.5));
+}
+
+@media (max-width: 575px) {
+  .swiper-button-next {
+    right: 30px;
+  }
+  .swiper-button-prev {
+    left: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .universities-text {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+.student-reviews {
   margin-top: 150px;
 }/*# sourceMappingURL=style.css.map */
