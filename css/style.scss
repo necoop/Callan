@@ -846,6 +846,7 @@ h1 {
       position: absolute;
       right: -60px;
       top: 0;
+      transition: 0.5s;
     }
     &:not(.collapsed) {
       font-weight: 400;
