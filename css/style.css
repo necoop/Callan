@@ -471,12 +471,12 @@ h1 blue {
 }
 @media (max-width: 991px) {
   .main-text h1 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 32px;
   }
   .main-text span {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 26px;
   }
   .main-text {
     margin: 0 10px;
