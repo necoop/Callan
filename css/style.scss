@@ -18,7 +18,8 @@
 }
 .main-wrapper {
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 .wrapper-inner {
@@ -394,7 +395,9 @@ main {
     gap: 40px;
   }
   & .navbar-contacts-bottom {
-    padding-left: 0;
+    // padding-left: 0;
+    position: absolute;
+    bottom: 0;
   }
 }
 .contact-item {
@@ -559,7 +562,6 @@ h1 {
   .tree-left {
     position: absolute;
     top: -230px;
-    z-index: -10;
   }
 }
 .welcome-ibg {
@@ -569,18 +571,18 @@ h1 {
   z-index: -10;
   overflow: hidden;
 }
-.welcome-ibg-pic {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  // width: 100%;
+// .welcome-ibg-pic {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   // width: 100%;
 
-  min-width: 100vw;
-  height: auto;
-  z-index: -10;
-  overflow-y: hidden;
-}
+//   min-width: 100vw;
+//   height: auto;
+//   z-index: -10;
+//   overflow-y: hidden;
+// }
 .welcome-box {
   margin-top: 105px;
 }
@@ -801,13 +803,14 @@ h1 {
   h2 {
     margin-bottom: 40px;
   }
-  margin-top: 157px;
+  margin-top: 35px;
 }
 .slide-students-foto {
   border-radius: 20px;
 }
 .questions {
   margin-top: 120px;
+  padding-bottom: 200px;
 }
 .accordion-box {
   margin-top: 20px;
@@ -875,8 +878,22 @@ h1 {
   margin-top: 20px;
   margin-right: calc(-0.5 * var(--bs-gutter-x) + 30px);
 }
+
+.ibg-1 {
+  position: relative;
+  background-image: url(../img/welcome/bg.jpg);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: auto;
+}
+@media (min-width: 1440px) {
+  .ibg-1 {
+    background-size: cover;
+  }
+}
+
 .contact-us {
-  margin-top: 87px;
+  // margin-top: 87px;
   & .row {
     position: relative;
   }
@@ -885,10 +902,14 @@ h1 {
 .contact-us-ibg {
   min-height: 695px;
   position: relative;
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
+  background-image: url(../img/contact-us/ibg.jpg);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: auto;
+}
+@media (min-width: 1440px) {
+  .contact-us-ibg {
+    background-size: cover;
   }
 }
 
