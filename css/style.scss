@@ -812,8 +812,8 @@ h1 {
   margin-top: 120px;
 }
 .accordion-box {
-  margin-top: 40px;
-  &> *:not(:first-child) {
+  margin-top: 20px;
+  & > *:not(:first-child) {
     margin-top: 50px;
   }
 }
@@ -874,5 +874,6 @@ h1 {
   transition: 0.5s;
 }
 .questions-item {
-    margin-right: calc(-.5 * var(--bs-gutter-x) + 30px);
+  margin-top: 20px;
+  margin-right: calc(-0.5 * var(--bs-gutter-x) + 30px);
 }
