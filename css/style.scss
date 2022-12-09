@@ -354,6 +354,8 @@ $margin-top-main: -80px;
 @media (max-width: 627px) {
   .navbar-collapsed {
     width: 70%;
+    left: -25px;
+    position: relative;
   }
 }
 
@@ -438,6 +440,7 @@ main {
   }
   & .btn {
     margin-top: 50px;
+    transition: 0.3s ease all;
   }
 }
 h1 {
@@ -553,7 +556,7 @@ h1 {
   }
 }
 .welcome {
-  margin-top: 97px;
+  margin-top: 107px;
   position: relative;
   .tree-left {
     position: absolute;
@@ -565,10 +568,8 @@ h1 {
   min-height: 2956px;
   position: absolute;
   width: 100%;
-  // position: relative;
   z-index: -10;
-  overflow-x: hidden;
-  // margin-bottom: 100px;
+  overflow: hidden;
 }
 .welcome-ibg-pic {
   position: absolute;
@@ -576,9 +577,9 @@ h1 {
   left: 0;
   height: 100%;
   // width: 100%;
-  
+
   min-width: 100vw;
-height: auto;
+  height: auto;
   z-index: -10;
   overflow-y: hidden;
 }
@@ -673,7 +674,8 @@ height: auto;
   z-index: 10;
   &::after {
     content: "";
-    background: url(../img/ui/arr-right.svg);
+    background: url(../img/ui/arr-right.png);
+    transition: 0.3s ease all;
     background-repeat: no-repeat;
     position: absolute;
     display: block;
@@ -684,13 +686,13 @@ height: auto;
   }
   &:hover {
     &::after {
-      background-image: url(../img/ui/arr-right-hover.svg);
+      background-image: url(../img/ui/arr-right-hover.png);
       filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.5));
     }
   }
   &:active {
     &::after {
-      background-image: url(../img/ui/arr-right-active.svg);
+      background-image: url(../img/ui/arr-right-active.png);
       filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.5));
     }
   }
@@ -705,7 +707,8 @@ height: auto;
   z-index: 10;
   &::after {
     content: "";
-    background: url(../img/ui/arr-left.svg);
+    background: url(../img/ui/arr-left.png);
+    transition: 0.3s ease all;
     background-repeat: no-repeat;
     position: absolute;
     display: block;
@@ -716,13 +719,13 @@ height: auto;
   }
   &:hover {
     &::after {
-      background-image: url(../img/ui/arr-left-hover.svg);
+      background-image: url(../img/ui/arr-left-hover.png);
       filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.5));
     }
   }
   &:active {
     &::after {
-      background-image: url(../img/ui/arr-left-active.svg);
+      background-image: url(../img/ui/arr-left-active.png);
       filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.5));
     }
   }
@@ -749,7 +752,7 @@ height: auto;
     margin-bottom: 40px;
   }
 }
-.swiper-rewiews {
+.mySwiper {
   overflow-x: hidden;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -791,5 +794,84 @@ height: auto;
   border-radius: 20px;
   padding: 106px 15px 15px 15px;
   height: 100%;
-  border: 1px dashed #ECF6FC;
+  border: 1px dashed #ecf6fc;
+}
+.swiper-foto {
+  border-radius: 20px;
+}
+.students-foto {
+  h2 {
+    margin-bottom: 40px;
+  }
+  margin-top: 157px;
+}
+.slide-students-foto {
+  border-radius: 20px;
+}
+.questions {
+  margin-top: 120px;
+}
+.accordion-box {
+  margin-top: 40px;
+  &> *:not(:first-child) {
+    margin-top: 50px;
+  }
+}
+
+@media (max-height: 570px) {
+  main .navbar-contacts-bottom {
+    display: none;
+  }
+}
+.questions-item {
+  border-radius: 20px;
+  padding: 12px;
+  background-color: #fff;
+}
+.question-item-inner {
+  background: #ffffff;
+  border: 1px dashed #ecf6fc;
+  border-radius: 20px;
+  padding: 15px 27px;
+  .question-button {
+    background-color: #fff;
+    box-shadow: none;
+    position: relative;
+    &::after {
+      background-image: url(../img/ui/plus.svg);
+      background-size: auto;
+      background-repeat: no-repeat;
+      width: 52px;
+      height: 52px;
+      position: absolute;
+      right: -60px;
+      top: 0;
+    }
+    &:not(.collapsed) {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      color: #7a7a7a;
+      &::after {
+        background-image: url(../img/ui/minuse.svg);
+      }
+    }
+  }
+}
+.question-accordion-header {
+  button {
+    line-height: 26px;
+  }
+}
+.question-body {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #7a7a7a;
+}
+.question-collapse {
+  transition: 0.5s;
+}
+.questions-item {
+    margin-right: calc(-.5 * var(--bs-gutter-x) + 30px);
 }

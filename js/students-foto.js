@@ -1,8 +1,8 @@
-const swiperRewiews = new Swiper('.swiper-rewiews', {
+const swiperFoto = new Swiper('.swiper-foto', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 20,
     slidesPerGroup: 1,
     // If we need pagination
@@ -12,8 +12,8 @@ const swiperRewiews = new Swiper('.swiper-rewiews', {
   
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-reviews-next',
-      prevEl: '.swiper-reviews-prev',
+      nextEl: '.swiper-foto-next',
+      prevEl: '.swiper-foto-prev',
     },
   
     // And if we need scrollbar
@@ -28,11 +28,11 @@ const swiperRewiews = new Swiper('.swiper-rewiews', {
       767: {
         slidesPerView: 2,
       },
-    //   991: {
-    //     slidesPerView: 3,
-    //   },
-      1199: {
+      991: {
         slidesPerView: 3,
+      },
+      1199: {
+        slidesPerView: 4,
       },
     },
   });
