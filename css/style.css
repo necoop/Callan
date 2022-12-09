@@ -16,10 +16,31 @@
   font-style: normal;
   font-weight: 700;
 }
+.main-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 .main-wrapper {
   width: 100%;
   min-height: 100vh;
   position: relative;
+}
+
+.main-bg {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-image: url(../img/main/bg.jpg);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
+  background-size: cover;
+}
+
+.wrapper-box {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .wrapper-inner {
@@ -28,6 +49,13 @@
   top: 0;
   left: 0;
   z-index: 100;
+}
+
+.maine-paige-container {
+  position: relative;
+  max-width: 1140px;
+  min-height: 538px;
+  height: 100vh;
 }
 
 .navbar-container {
@@ -396,8 +424,7 @@ main .navbar-contacts-bottom {
   bottom: 30px;
   display: flex;
   gap: 40px;
-}
-main .navbar-contacts-bottom {
+  padding-left: 0;
   position: absolute;
   bottom: 0;
 }
@@ -557,12 +584,8 @@ h1 blue {
   }
 }
 .welcome {
-  margin-top: 107px;
+  padding-top: 90px;
   position: relative;
-}
-.welcome .tree-left {
-  position: absolute;
-  top: -230px;
 }
 
 .welcome-ibg {
@@ -603,6 +626,11 @@ h1 blue {
   margin: -128px auto 0;
   display: block;
   position: relative;
+}
+
+.tree-left {
+  position: absolute;
+  top: -120px;
 }
 
 @media (max-width: 1199px) {
@@ -799,7 +827,7 @@ h1 blue {
 }
 
 .students-foto {
-  margin-top: 35px;
+  margin-top: 140px;
 }
 .students-foto h2 {
   margin-bottom: 40px;
@@ -821,7 +849,12 @@ h1 blue {
   margin-top: 50px;
 }
 
-@media (max-height: 570px) {
+@media (max-width: 1199px) {
+  .accordion-box > *:not(:first-child) {
+    margin-top: 0;
+  }
+}
+@media (max-height: 650px) {
   main .navbar-contacts-bottom {
     display: none;
   }
@@ -885,18 +918,22 @@ h1 blue {
 }
 
 .ibg-1 {
-  position: relative;
+  position: absolute;
+  height: 3363px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: -10;
+}
+.ibg-1 .ibg-1-inner {
   background-image: url(../img/welcome/bg.jpg);
   background-repeat: no-repeat;
-  background-position-y: top;
-  background-size: auto;
+  background-size: cover;
+  width: 1440px;
+  height: 100%;
+  background-position: left top;
 }
 
-@media (min-width: 1440px) {
-  .ibg-1 {
-    background-size: cover;
-  }
-}
 .contact-us {
   overflow-x: hidden;
 }
@@ -922,4 +959,22 @@ h1 blue {
   .contact-us-ibg img {
     width: 100%;
   }
+}
+.questions-background {
+  position: absolute;
+  z-index: -9;
+}
+
+@media (max-width: 700px) {
+  .questions-background {
+    margin-top: -63px;
+  }
+  .questions {
+    margin-top: 190px;
+  }
+}
+.container-outer {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
