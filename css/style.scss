@@ -464,7 +464,6 @@ h1 {
 }
 @media (max-width: 991px) {
   .main-text {
-    // padding: 0 20px;
     & h1 {
       font-size: 24px;
       line-height: 32px;
@@ -546,7 +545,6 @@ h1 {
   .btn {
     width: 90%;
     padding-left: calc(45% - 110px);
-    // display: block;
     margin: 0 auto;
     &::before {
       display: block;
@@ -876,4 +874,28 @@ h1 {
 .questions-item {
   margin-top: 20px;
   margin-right: calc(-0.5 * var(--bs-gutter-x) + 30px);
+}
+.contact-us {
+  margin-top: 87px;
+  & .row {
+    position: relative;
+  }
+  overflow-x: hidden;
+}
+.contact-us-ibg {
+  min-height: 695px;
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact-us-ibg {
+    & img {
+      width: 100%;
+    }
+  }
 }

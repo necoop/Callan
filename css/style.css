@@ -892,4 +892,28 @@ h1 blue {
 .questions-item {
   margin-top: 20px;
   margin-right: calc(-0.5 * var(--bs-gutter-x) + 30px);
+}
+
+.contact-us {
+  margin-top: 87px;
+  overflow-x: hidden;
+}
+.contact-us .row {
+  position: relative;
+}
+
+.contact-us-ibg {
+  min-height: 695px;
+  position: relative;
+}
+.contact-us-ibg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 1440px) {
+  .contact-us-ibg img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
