@@ -1040,6 +1040,10 @@ h1 blue {
   .contact-img-container {
     margin-left: -130px;
   }
+  .contact-us-ibg {
+    background-position-x: center;
+    background-position-y: 77px;
+  }
 }
 @media (max-width: 370px) {
   .contact-img-container {
@@ -1098,6 +1102,13 @@ h1 blue {
   }
   .contact-form {
     top: 0;
+  }
+  .contact-us-ibg .main-container {
+    min-height: 1157px;
+  }
+  .contact-img {
+    position: relative;
+    top: 27px;
   }
 }
 .form-icon-holder {
