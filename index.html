@@ -52,22 +52,22 @@
                             <a class="nav-link" aria-current="page" data-foo="Главная" href="#">Главная</a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link" data-foo="О нас">О нас</a>
+                            <a href="#about-us" class="nav-link" data-foo="О нас">О нас</a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link" data-foo="Услуги">Услуги</a>
+                            <a href="#universities" class="nav-link" data-foo="Услуги">Услуги</a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link" data-foo="Университеты">Университеты</a>
+                            <a href="#universities" class="nav-link" data-foo="Университеты">Университеты</a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link" data-foo="Студенты">Студенты</a>
+                            <a href="#students" class="nav-link" data-foo="Студенты">Студенты</a>
                           </li>
                           <li class="nav-item">
                             <a href="#" class="nav-link" data-foo="Новости">Новости</a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link" data-foo="Контаты">Контакты</a>
+                            <a href="#contacts" class="nav-link" data-foo="Контаты">Контакты</a>
                           </li>
                         </ul>
                         <div class="navbar-right">
@@ -127,7 +127,7 @@
     </div>
   </div>
 
-  <section class="welcome main-container">
+  <section class="welcome main-container" id="about-us">
     <div class="container">
       <div class="row justify-content-center text-center">
         <div class="col-xl-4 col-md-6 col-sm-12">
@@ -170,7 +170,7 @@
     </div>
   </section>
 
-  <section class="universities main-container">
+  <section class="universities main-container" id="universities">
     <div class="container">
       <div class="row justify-content-center text-center">
         <div class="col-xl-4 col-md-6 col-sm-12 ">
@@ -186,6 +186,7 @@
         <div class="swiper mySwiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper text-center">
+
             <!-- Slides -->
 
             <div class="swiper-slide col-xl-3 col-lg-4 col-md-6 col-sm-12 slide-universities-wrapper">
@@ -315,7 +316,7 @@
     </div>
   </section>
 
-  <section class="students-foto main-container">
+  <section class="students-foto main-container" id="students">
     <div class="container">
       <h2>Фотографии наших студентов</h2>
 
@@ -493,7 +494,6 @@
     </div>
   </section>
 
-
   <section class="contact-us container-outer">
     <div class="row">
       <div class="contact-us-ibg">
@@ -503,7 +503,7 @@
               <img src="./img/contact-us/anna.png" alt="Анна" class="contact-img ">
             </div>
           </div>
-          <form action="#" method="get" class="col-md-6  col-sm-12 contact-form">
+          <div action="#" method="get" class="col-md-6  col-sm-12 contact-form">
             <div class="contact-form-inner">
               <img src="./img/contact-us/pen.png" class="contact-pen">
               <h2>Связаться с нами</h2>
@@ -535,11 +535,162 @@
               </button>
 
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="contacts" id="contacts">
+    <div class="container-outer contacts-ibg">
+      <img src="./img/contacts/bus.png" class="contact-bus">
+      <img src="./img/contacts/tree.png" class="contact-tree">
+      <div class="main-container">
+        <div class="justify-content-center text-center">
+          <div class="col-xl-4 col-md-6 col-sm-12"></div>
+          <h2>Остались вопросы?</h2>
+          Свяжитесь с нами и мы ответим на все ваши вопросы
+        </div>
+
+        <div class="address-form">
+          <div class="address-inner">
+            <ul class="contact-box">
+              <li class="contact-box-item" id="contact-box-item1">
+                <b>Телефоны</b>
+                <br>
+                <a href="tel:+998998786399">+998 (99) 878-63-99</a>
+                <br>
+                <a href="tel:+998998786399">+998 (99) 878-63-99</a>
+              </li>
+              <li class="contact-box-item" id="contact-box-item2">
+                <a href="#!">
+                  <b>Адрес</b>
+                  <br>
+                  г. Город, ул. Улица, 24 (Офис 24)
+                </a>
+              </li>
+              <li class="contact-box-item" id="contact-box-item3">
+                <b>Время работы</b>
+                <br>
+                Пн-Пт 9:00 - 18:00
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="button-whith-icon" data-bs-toggle="modal" data-bs-target="#buttonConnect">
+            <div class="button-icon">
+              <img src="./img/ui/btn-phone.svg">
+            </div>
+            <div class="button-text">Связаться с нами</div>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-outer">
+      <div class="footer-container">
+        <div class="main-container">
+          <div class="footer-inner">
+            <div class="footer-item" id="footer-item1">
+              <a href="#!">
+                <img src="./img/footer/Callan-logo.png" alt="Callan-Education">
+              </a>
+            </div>
+            <div class="footer-item" id="footer-item2">
+              <div id="footer-item2-box">
+                <ul class="footer-nav">
+                  <li class="footer-nav-item"><a href="#!">Главная</a></li>
+                  <li class="footer-nav-item"><a href="#about-us">О нас</a></li>
+                  <li class="footer-nav-item"><a href="#universities">Услуги</a></li>
+                  <li class="footer-nav-item"><a href="#universities">Университеты</a></li>
+                  <li class="footer-nav-item"><a href="#students">Студенты</a></li>
+                  <li class="footer-nav-item"><a href="#!">Новости</a></li>
+                  <li class="footer-nav-item"><a href="#contacts">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-item" id="footer-item3">
+              <ul class="footer-social">
+                <li class="footer-social-item"><a href="#!">
+                    <img src="./img/nav/inst.png" alt="inst">
+                  </a></li>
+                <li class="footer-social-item"><a href="#!">
+                    <img src="./img/nav/fb.png " alt="facebook">
+                  </a></li>
+                <li class="footer-social-item"><a href="#!">
+                    <img src="./img/nav/youtube.png" alt="youtube">
+                  </a></li>
+              </ul>
+            </div>
+            <div class="footer-item" id="footer-item4"></div>
+            <div class="footer-item" id="footer-item5">
+              <a href="#!">
+                <img src="./img/footer/WWE-logo.png" alt="WWE">
+              </a>
+            </div>
+            <div class="footer-item" id="footer-item6">
+              <ul class="footer-contact">
+                <li class="footer-contact-item" id="footer-contact-item-1">
+                  <a href="tel:+998998786399">+998 (99) 878-63-99</a>
+                  <a href="tel:+998998786399">+998 (99) 878-63-99</a>
+                </li>
+                <li class="footer-contact-item" id="footer-contact-item-2">Пн-Пт 9:00 - 18:00</li>
+                <li class="footer-contact-item" id="footer-contact-item-3"><a href="#!">г. Город <gray>ул. Улица, 24
+                      (Офис 24)</gray> </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Модальное окно -->
+  <div class="modal fade" id="buttonConnect" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Заголовок модального окна</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div> -->
+
+        <div class="modal-body">
+          <div class="contact-form-inner">
+            <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Закрыть">
+              <img src="./img/ui/X-mark.svg">
+            </button>
+            <h2>Связаться с нами</h2>
+            <h3>Оставьте свои данные и наш специалист обязательно свяжемся с Вами в течение дня</h3>
+            <div class="name-form-box contact-form-box">
+              <div class="form-icon-holder"></div>
+              <input type="text" name="user_name" id="user_name" class="contact-form-input user-name form-label"
+                placeholder="Ваше имя">
+            </div>
+            <div class="phone-form-box contact-form-box">
+              <div class="form-icon-holder"></div>
+              <input type="tel" name="user_phone" id="user_phone" class="contact-form-input user-phone form-label"
+                placeholder="+998 (___) __ - __ - __">
+            </div>
+            <div class="input-group comment-form-box">
+              <img src="./img/contact-us/comment.svg" class="input-group-text">
+              <textarea class="form-control contact-form-input text-area-input" aria-label="С текстовым полем"
+                placeholder="Дополнительные комментарии" name="user_info"></textarea>
+            </div>
+            <button type="submit" class="modal-form" data-bs-dismiss="modal">
+              <div class="button-icon">
+                <img src="./img/ui/send.svg">
+              </div>
+              <div class="button-text">Отправить</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/slider-universities.js"></script>
