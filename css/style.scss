@@ -16,10 +16,6 @@
   font-style: normal;
   font-weight: 700;
 }
-.main-container {
-  max-width: 1140px;
-  margin: 0 auto;
-}
 .main-wrapper {
   width: 100%;
   min-height: 100vh;
@@ -49,7 +45,7 @@
 
 .maine-paige-container {
   position: relative;
-  max-width: 1140px;
+  // max-width: 1140px;
   min-height: 538px;
   height: 100vh;
 }
@@ -268,14 +264,8 @@ $margin-top-main: -80px;
 }
 
 @media (max-width: 1199px) {
-  .navbar-collapse {
-    padding: 0 25px;
-  }
-}
-
-@media (max-width: 1131px) {
   #navbarSupportedContent {
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     & .navbar-left {
       order: 1;
@@ -289,8 +279,8 @@ $margin-top-main: -80px;
     }
     & .navbar-nav {
       order: 3;
-      margin: 20px auto 0;
-      width: 90%;
+      margin: 20px 0 0;
+      width: 100%;
       justify-content: space-between;
     }
   }
@@ -312,7 +302,7 @@ $margin-top-main: -80px;
   .navbar-collapsed {
     display: flex;
     justify-content: space-around;
-    width: 90%;
+    width: 80%;
   }
 
   .navbar-insta {
@@ -382,7 +372,7 @@ $margin-top-main: -80px;
 }
 @media (max-width: 627px) {
   .navbar-collapsed {
-    width: 70%;
+    // width: 70%;
     left: -25px;
     position: relative;
   }
@@ -452,9 +442,9 @@ main {
   max-width: 761px;
   position: absolute;
   top: 202px;
-  padding: 20px;
+  padding: 20px 0;
   border-radius: 20px;
-  margin-left: -20px;
+  // margin-left: -20px;
   & span {
     font-weight: 400;
     font-size: 18px;
@@ -486,16 +476,6 @@ h1 {
   color: #313131;
   & blue {
     color: #52bfff;
-  }
-}
-@media (max-width: 1199px) {
-  .main-text {
-    padding-left: 25px;
-  }
-}
-@media (max-width: 1131px) {
-  .main-text {
-    padding-left: 75px;
   }
 }
 @media (max-width: 991px) {
@@ -1017,11 +997,6 @@ h1 {
   background-repeat: no-repeat;
   background-position-y: center;
   background-size: auto;
-  .main-container {
-    height: 100%;
-    position: relative;
-    // overflow-y: hidden;
-  }
 }
 .questions-background {
   position: absolute;
@@ -1129,7 +1104,7 @@ h1 {
   padding: 0;
   height: 695px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .contact-us {
     padding-bottom: 25px;
   }
@@ -1138,11 +1113,6 @@ h1 {
   }
   .contact-form {
     top: 0;
-  }
-  .contact-us-ibg .main-container {
-    min-height: 1157px;
-    padding-right: 15px;
-    padding-left: 15px;
   }
   .contact-img {
     position: relative;
@@ -1349,7 +1319,7 @@ h1 {
 
 .contacts {
   margin-top: 61px;
-  .main-container {
+  .container {
     padding-bottom: 141px;
   }
   .contact-bus {
@@ -1520,7 +1490,7 @@ footer {
       background: #ffffff;
       border-top: 1px dashed #e2edf3;
       border-bottom: 1px dashed #e2edf3;
-      .main-container {
+      .container {
         margin-top: 42px;
         margin-bottom: 44px;
         .footer-inner {
@@ -1644,21 +1614,13 @@ footer {
   }
 }
 
-@media (max-width: 1159px) {
-  .footer-container {
-    .main-container {
-      padding: 0 10px;
-    }
-  }
-}
-
 $footer-bottom-font-size: 11px;
 
-@media (max-width: 1049px) {
+@media (max-width: 1199px) {
   footer
     .container-outer
     .footer-container
-    .main-container
+    .container
     .footer-inner
     .footer-contact
     .footer-contact-item {
@@ -1673,7 +1635,7 @@ $footer-bottom-font-size: 11px;
   footer
     .container-outer
     .footer-container
-    .main-container
+    .container
     .footer-inner
     .footer-contact
     .footer-contact-item::before {
@@ -1681,7 +1643,7 @@ $footer-bottom-font-size: 11px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   #footer-item2-box {
     display: block;
     // width: 100vw;
@@ -1689,16 +1651,16 @@ $footer-bottom-font-size: 11px;
   footer
     .container-outer
     .footer-container
-    .main-container
+    .container
     .footer-inner
     .footer-item
     .footer-social {
     gap: 10px;
   }
 
-  footer .container-outer .footer-container .main-container .footer-inner {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  // footer .container-outer .footer-container .container .footer-inner {
+  //   grid-template-columns: 1fr 1fr 1fr;
+  // }
   #footer-item1 {
     order: 1;
     a img {
@@ -1736,7 +1698,7 @@ $footer-bottom-font-size: 11px;
   footer
     .container-outer
     .footer-container
-    .main-container
+    .container
     .footer-inner
     #footer-item6 {
     grid-column: 1/4;
@@ -1745,7 +1707,7 @@ $footer-bottom-font-size: 11px;
   footer
     .container-outer
     .footer-container
-    .main-container
+    .container
     .footer-inner
     .footer-item
     .footer-nav {
@@ -1757,7 +1719,7 @@ $footer-bottom-font-size: 11px;
   footer
     .container-outer
     .footer-container
-    .main-container
+    .container
     .footer-inner
     .footer-item
     .footer-nav
@@ -1769,20 +1731,24 @@ $footer-bottom-font-size: 11px;
   footer
     .container-outer
     .footer-container
-    .main-container
+    .container
     .footer-inner
     #footer-item2 {
     min-width: 0;
   }
-  #footer-item1,
-  #footer-item3,
+  #footer-item1 {
+    justify-self: start;
+  }
+  #footer-item3 {
+    justify-self: end;
+  }
   #footer-item5 {
     margin: 0 auto;
   }
   footer
     .container-outer
     .footer-container
-    .main-container
+    .container
     .footer-inner
     .footer-contact
     .footer-contact-item
@@ -1800,7 +1766,7 @@ $footer-bottom-font-size: 11px;
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: #D9D9D9;
+    background: #d9d9d9;
     filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.5));
     display: flex;
     justify-content: center;
@@ -1863,4 +1829,33 @@ $footer-bottom-font-size: 11px;
       background: linear-gradient(213.88deg, #86d2ff -67.78%, #47bbff 175.48%);
     }
   }
+}
+
+.nav-container {
+  background: #ffffff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+}
+
+.page-link {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 13px;
+  color: #7a7a7a;
+  margin-top: 50px;
+  align-items: center;
+  img {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+  }
+  a {
+    color: #d9d9d9;
+    margin: 0 22px 0 0;
+  }
+}
+
+.nav-link {
+  padding-right: 0;
+  padding-left: 0;
 }

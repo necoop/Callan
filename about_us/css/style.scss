@@ -1,0 +1,28 @@
+.about-us {
+  padding-top: 80px;
+  h2 {
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+  .row {
+    margin: 0;
+  }
+  .row>* {
+    padding: 0 !important;
+  }
+}
+@media (max-with: 1131px) {
+  .about-us {
+    padding-top: 129px;
+  }
+}
+.about-us-container {
+//   display: flex;
+  .about-us-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7a7a7a;
+    text-align: justify;
+  }
+}
