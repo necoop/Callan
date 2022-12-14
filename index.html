@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
   <div class="main-wrapper">
     <div class="main-bg">
       <div class="wrapper-box">
@@ -352,11 +353,13 @@
     </div>
   </section>
 
-  <div class="container-outer">
+  <div class="question-background-box">
     <img src="./img/questions/questions-background.png" alt="Кубики" class="questions-background">
   </div>
+
   <section class="questions">
     <div class="container">
+
       <h2>Вопросы и ответы</h2>
       <div class="accordion-box">
         <div class="row">
@@ -499,55 +502,53 @@
     </div>
   </section>
 
-  <section class="contact-us container-outer">
-    <div class="">
-      <div class="contact-us-ibg">
-        <div class="row container">
-          <div class="contact-inner col-lg-6">
-            <div class="contact-img-container">
-              <img src="./img/contact-us/anna.png" alt="Анна" class="contact-img ">
-            </div>
+  <section class="contact-us">
+    <div class="contact-us-ibg">
+      <div class="row container">
+        <div class="contact-inner col-lg-6">
+          <div class="contact-img-container">
+            <img src="./img/contact-us/anna.png" alt="Анна" class="contact-img ">
           </div>
-          <div action="#" method="get" class="col-lg-6 contact-form">
-            <div class="contact-form-inner">
-              <img src="./img/contact-us/pen.png" class="contact-pen">
-              <h2>Связаться с нами</h2>
-              <h3>Оставьте свои данные и наш специалист обязательно свяжемся с Вами в течение дня</h3>
+        </div>
+        <div action="#" method="get" class="col-lg-6 contact-form">
+          <div class="contact-form-inner">
+            <img src="./img/contact-us/pen.png" class="contact-pen">
+            <h2>Связаться с нами</h2>
+            <h3>Оставьте свои данные и наш специалист обязательно свяжемся с Вами в течение дня</h3>
 
-              <div class="name-form-box contact-form-box">
-                <div class="form-icon-holder"></div>
-                <input type="text" name="user_name" id="user_name" class="contact-form-input user-name form-label"
-                  placeholder="Ваше имя">
-              </div>
-
-              <div class="phone-form-box contact-form-box">
-                <div class="form-icon-holder"></div>
-                <input type="tel" name="user_phone" id="user_phone" class="contact-form-input user-phone form-label"
-                  placeholder="+998 (___) __ - __ - __">
-              </div>
-
-              <div class="input-group comment-form-box">
-                <img src="./img/contact-us/comment.svg" class="input-group-text">
-                <textarea class="form-control contact-form-input text-area-input" aria-label="С текстовым полем"
-                  placeholder="Дополнительные комментарии" name="user_info"></textarea>
-              </div>
-
-              <button type="submit" class="send-contact">
-                <div class="button-icon">
-                  <img src="./img/ui/send.svg">
-                </div>
-                <div class="button-text">Отправить</div>
-              </button>
-
+            <div class="name-form-box contact-form-box">
+              <div class="form-icon-holder"></div>
+              <input type="text" name="user_name" id="user_name" class="contact-form-input user-name form-label"
+                placeholder="Ваше имя">
             </div>
+
+            <div class="phone-form-box contact-form-box">
+              <div class="form-icon-holder"></div>
+              <input type="tel" name="user_phone" id="user_phone" class="contact-form-input user-phone form-label tel"
+                placeholder="+998 (__) ___ - __ - __">
+            </div>
+
+            <div class="input-group comment-form-box">
+              <img src="./img/contact-us/comment.svg" class="input-group-text">
+              <textarea class="form-control contact-form-input text-area-input" aria-label="С текстовым полем"
+                placeholder="Дополнительные комментарии" name="user_info"></textarea>
+            </div>
+
+            <button type="submit" class="send-contact">
+              <div class="button-icon">
+                <img src="./img/ui/send.svg">
+              </div>
+              <div class="button-text">Отправить</div>
+            </button>
           </div>
         </div>
       </div>
     </div>
+
   </section>
 
   <section class="contacts" id="contacts">
-    <div class="container-outer contacts-ibg">
+    <div class="contacts-ibg">
       <img src="./img/contacts/bus.png" class="contact-bus">
       <img src="./img/contacts/tree.png" class="contact-tree">
       <div class="container">
@@ -670,8 +671,8 @@
             </div>
             <div class="phone-form-box contact-form-box">
               <div class="form-icon-holder"></div>
-              <input type="tel" name="user_phone" id="user_phone" class="contact-form-input user-phone form-label"
-                placeholder="+998 (___) __ - __ - __">
+              <input type="tel" name="user_phone" id="user_phone" class="contact-form-input user-phone form-label tel"
+                placeholder="+998 (__) ___ - __ - __">
             </div>
             <div class="input-group comment-form-box">
               <img src="./img/contact-us/comment.svg" class="input-group-text">
@@ -695,6 +696,7 @@
   <script src="./js/slider-universities.js"></script>
   <script src="./js/slider-reviews.js"></script>
   <script src="./js/students-foto.js"></script>
+  <script src="./js/tel-mask.js"></script>
 </body>
 
 </html>

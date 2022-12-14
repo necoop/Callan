@@ -32,7 +32,7 @@
 }
 .wrapper-box {
   position: relative;
-  max-width: 1140px;
+  // max-width: 1140px;
   margin: 0 auto;
 }
 .wrapper-inner {
@@ -161,7 +161,7 @@ $margin-top-main: -80px;
   background-image: url(../img/nav/youtube.png);
   width: 19px;
   height: 14px;
-  box-shadow: 0px 0px 25px rgba(146, 214, 255, 0.5);
+  // box-shadow: 0px 0px 25px rgba(146, 214, 255, 0.5);
 }
 .reqest__btn {
   &::before {
@@ -301,7 +301,7 @@ $margin-top-main: -80px;
   }
   .navbar-collapsed {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 80%;
   }
 
@@ -367,13 +367,13 @@ $margin-top-main: -80px;
     width: 100%;
     border-radius: 0;
     background-color: rgba(255, 255, 255, 0);
-    padding: 0 10px;
+    // padding: 0 10px;
   }
 }
 @media (max-width: 627px) {
   .navbar-collapsed {
     // width: 70%;
-    left: -25px;
+    // left: -25px;
     position: relative;
   }
 }
@@ -623,7 +623,7 @@ h1 {
 }
 .welcome-inner {
   width: 100%;
-  height: 180px;
+  min-height: 171px;
   background: #ffffff;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
@@ -639,11 +639,13 @@ h1 {
 .welcome-inner-text {
   padding: 60px 10px 0 10px;
   position: relative;
+  min-height: 145px;
 }
 .welcome-img {
   margin: -128px auto 0;
   display: block;
   position: relative;
+  height: 125px;
 }
 .tree-left {
   position: absolute;
@@ -779,7 +781,7 @@ h1 {
 }
 @media (max-width: 1199px) {
   .white-box-text {
-    margin: 0 10px;
+    // margin: 0 10px;
     padding: 10px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -984,6 +986,7 @@ h1 {
 }
 
 .contact-us {
+  margin-top: 21px;
   & .row {
     width: 100%;
     margin: 0 auto;
@@ -991,6 +994,8 @@ h1 {
   overflow-x: hidden;
 }
 .contact-us-ibg {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0;
   min-height: 695px;
   background-image: url(../img/contact-us/ibg.jpg);
@@ -1009,11 +1014,6 @@ h1 {
   .questions {
     margin-top: 190px;
   }
-}
-.container-outer {
-  position: relative;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 @media (max-width: 1199px) {
   .questions-item {
@@ -1340,6 +1340,9 @@ h1 {
 .contacts-ibg {
   background-image: url(../img/contacts/ibg.jpg);
   background-repeat: no-repeat;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .address-form {
@@ -1482,6 +1485,8 @@ h1 {
 // FOOTER
 
 footer {
+  max-width: 1440px;
+  margin: 0 auto;
   .container-outer {
     background: #ffffff;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
@@ -1658,9 +1663,6 @@ $footer-bottom-font-size: 11px;
     gap: 10px;
   }
 
-  // footer .container-outer .footer-container .container .footer-inner {
-  //   grid-template-columns: 1fr 1fr 1fr;
-  // }
   #footer-item1 {
     order: 1;
     a img {
@@ -1755,6 +1757,9 @@ $footer-bottom-font-size: 11px;
     a {
     font-size: 12px;
     line-height: 16px;
+  }
+  footer .container-outer .footer-container .container .footer-inner {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -1858,4 +1863,18 @@ $footer-bottom-font-size: 11px;
 .nav-link {
   padding-right: 0;
   padding-left: 0;
+}
+.question-background-box {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container-ibg {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media (max-width: 332px) {
+  .universities h2 {
+    font-size: 34px;
+  }
 }
