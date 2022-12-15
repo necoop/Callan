@@ -17,12 +17,99 @@
   }
 }
 .about-us-container {
-  //   display: flex;
   .about-us-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #7a7a7a;
     text-align: justify;
+  }
+}
+.services {
+  h2 {
+    margin-top: 150px;
+  }
+  ol, ul {
+    padding-left: 0;
+  }
+}
+.service-list {
+  margin-top: 40px;
+  .service-item {
+    margin-top: 55px;
+  }
+}
+.servise-item-inner {
+  width: 100%;
+  min-height: 195px;
+  background: #ffffff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 12px;
+  .service-item-box {
+    background: #ffffff;
+    border: 1px dashed #ecf6fc;
+    border-radius: 20px;
+    width: 100%;
+    min-height: 171px;
+    padding: 0 36px 18px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #7a7a7a;
+    h3 {
+      margin-top: 10px;
+    }
+    .service-img-item {
+      height: 110px;
+      margin-top: -55px;
+    }
+  }
+}
+.about-us-ibg {
+  height: 1097px;
+  margin-top: -298px;
+}
+@media (max-width: 767px) {
+  .servise-item-inner {
+    min-height: 122px;
+    padding: 9px;
+    .service-item-box {
+      min-height: 104px;
+      padding: 13px 18px 20px;
+      h3 {
+        font-size: 12px;
+        line-height: 18px;
+      }
+      .service-img-item {
+        height: 85px;
+      }
+    }
+  }
+  .service-list .service-item {
+    margin-top: 40px;
+  }
+  .about-us-ibg {
+    margin-top: 250px;
+  }
+}
+.services-ibg {
+  position: relative;
+  height: 200px;
+  bottom: 0;
+  background: #dbecf6;
+  .ibg {
+    bottom: 0;
+  }
+}
+.services {
+  display: flex;
+  justify-content: center;
+  .container-ibg {
+    width: 1440px;
+    background-image: url(../img/services/white-cloud-1.jpg);
+    background-repeat: repeat-y;
+    position: relative;
   }
 }
