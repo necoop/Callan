@@ -28,7 +28,8 @@
 .services h2 {
   margin-top: 150px;
 }
-.services ol, .services ul {
+.services ol,
+.services ul {
   padding-left: 0;
 }
 
@@ -97,13 +98,18 @@
   }
 }
 .services-ibg {
-  position: relative;
-  height: 200px;
-  bottom: 0;
-  background: #dbecf6;
+  height: 125px;
+  background-color: #d8eaf6;
 }
-.services-ibg .ibg {
-  bottom: 0;
+.services-ibg img {
+  position: absolute;
+}
+.services-ibg .ibg-bottom {
+  bottom: -226px;
+}
+.services-ibg .ibg-top {
+  top: -346px;
+  left: 0;
 }
 
 .services {
@@ -112,7 +118,8 @@
 }
 .services .container-ibg {
   width: 1440px;
-  background-image: url(../img/services/white-cloud-1.jpg);
+  background-image: url(../img/services/white-cloud-2.jpg);
   background-repeat: repeat-y;
   position: relative;
+  background-position-y: -50px;
 }/*# sourceMappingURL=style.css.map */

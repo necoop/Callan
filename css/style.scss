@@ -150,7 +150,6 @@ $margin-top-main: -80px;
   background-repeat: no-repeat;
   width: 110px;
   height: 54px;
-  // margin-right: 15px;
 }
 .navbar-insta {
   background-image: url(../img/nav/inst.png);
@@ -325,6 +324,14 @@ $margin-top-main: -80px;
     order: 4;
     margin-right: 0;
   }
+  .navbar-left-item.navbar-brand {
+    padding-top: 0;
+  }
+  .navbar-left-item {
+    .custom-logo-link {
+      display: block;
+    }
+  }
   .reqest__btn {
     margin-left: 0;
     margin-top: 25px;
@@ -379,8 +386,6 @@ $margin-top-main: -80px;
 }
 @media (max-width: 627px) {
   .navbar-collapsed {
-    // width: 70%;
-    // left: -25px;
     position: relative;
   }
 }
@@ -401,12 +406,6 @@ $margin-top-main: -80px;
   position: absolute;
   width: 1440px;
   z-index: -10;
-}
-@media (min-width: 1440px) {
-  .ibg {
-    // min-width: 100%;
-    // height: auto;
-  }
 }
 
 // MAIN
@@ -611,18 +610,6 @@ h1 {
   z-index: -10;
   overflow: hidden;
 }
-// .welcome-ibg-pic {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   height: 100%;
-//   // width: 100%;
-
-//   min-width: 100vw;
-//   height: auto;
-//   z-index: -10;
-//   overflow-y: hidden;
-// }
 .welcome-box {
   margin-top: 105px;
 }
@@ -834,6 +821,8 @@ h1 {
     font-size: 14px;
     line-height: 22px;
     color: #7a7a7a;
+    height: 154px;
+    text-align: center;
   }
 }
 .reviews-box-inner {
@@ -859,9 +848,15 @@ h1 {
   padding-bottom: 100px;
 }
 .accordion-box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 50px;
+  column-gap: 40px;
   margin-top: 60px;
-  & > *:not(:first-child) {
-    margin-top: 70px;
+}
+@media (max-width: 991px) {
+  .accordion-box {
+    grid-template-columns: auto;
   }
 }
 @media (max-width: 1199px) {
@@ -1074,7 +1069,11 @@ h1 {
   background: #ffffff;
   border-radius: 20px;
   position: relative;
-  top: 104px;
+}
+.contact-us {
+  .contact-form {
+    top: 104px;
+  }
 }
 
 .contact-form-inner {
@@ -1171,6 +1170,7 @@ h1 {
 }
 .name-form-box {
   margin-top: 21px;
+  position: relative;
 }
 .contact-form-box {
   display: flex;
@@ -1193,6 +1193,7 @@ h1 {
 }
 .phone-form-box {
   margin-top: 8px;
+  position: relative;
 }
 .phone-form-box {
   .form-icon-holder {
@@ -1877,15 +1878,130 @@ $footer-bottom-font-size: 11px;
   margin: 0 auto;
 }
 .container-ibg {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  overflow-x: hidden;
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
   z-index: -10;
+}
+@media (max-width: 1440px) {
+  .container-ibg {
+    width: 100%;
+  }
 }
 @media (max-width: 332px) {
   .universities h2 {
     font-size: 34px;
+  }
+}
+
+.error-text {
+  background: #f59e9e;
+  padding: 15px 0px;
+  text-align: center;
+  color: #fff;
+}
+
+.error-name,
+.error-tel,
+.error-comments {
+  display: inline-block;
+  font-size: 11px;
+  position: absolute;
+  top: -30px;
+  color: white;
+  border: 1px solid red;
+  padding: 5px 10px;
+  line-height: 1.1;
+  background: red;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.error-name:after,
+.error-tel:after,
+.error-comments:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: -10px;
+  border: 5px solid transparent;
+  border-top: 5px solid red;
+}
+
+.error-comments {
+  top: 16%;
+  left: 0;
+}
+
+.error-name {
+  left: 40%;
+}
+
+.error-tel {
+  left: 40%;
+  display: inline-block;
+  font-size: 11px;
+  position: absolute;
+  top: -30px;
+  color: white;
+  border: 1px solid red;
+  padding: 5px 10px;
+  line-height: 1.1;
+  background: red;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.message-success {
+  background: rgba(0, 128, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 3px;
+}
+
+#add_feedback .required:after {
+  content: "*";
+  position: absolute;
+  left: 20px;
+  bottom: -10px;
+}
+.message-success {
+  display: none;
+}
+.art_left_name.error,
+.art_left_tel.error {
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  border-left: 2px solid red;
+  border-right: none;
+}
+.art_right_name.error,
+.art_right_tel.error {
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
+}
+
+.modal_art_left_name.error,
+.modal_art_left_tel.error {
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  border-left: 2px solid red;
+  border-right: none;
+}
+.modal_art_right_name.error,
+.modal_art_right_tel.error {
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
+}
+// Убираем сдвиг при появлении модального окна
+.customize-support.modal-open {
+  #wpadminbar {
+    width: calc(100% - 17px);
+  }
+  .wrapper-inner {
+    width: calc(100% - 17px);
   }
 }

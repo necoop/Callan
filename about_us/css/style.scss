@@ -29,7 +29,8 @@
   h2 {
     margin-top: 150px;
   }
-  ol, ul {
+  ol,
+  ul {
     padding-left: 0;
   }
 }
@@ -95,12 +96,17 @@
   }
 }
 .services-ibg {
-  position: relative;
-  height: 200px;
-  bottom: 0;
-  background: #dbecf6;
-  .ibg {
-    bottom: 0;
+  height: 125px;
+  background-color: #d8eaf6;
+  img {
+    position: absolute;
+  }
+  .ibg-bottom {
+    bottom: -226px;
+  }
+  .ibg-top {
+    top: -346px;
+    left: 0;
   }
 }
 .services {
@@ -108,8 +114,9 @@
   justify-content: center;
   .container-ibg {
     width: 1440px;
-    background-image: url(../img/services/white-cloud-1.jpg);
+    background-image: url(../img/services/white-cloud-2.jpg);
     background-repeat: repeat-y;
     position: relative;
+    background-position-y: -50px;
   }
 }
